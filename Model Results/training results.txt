@@ -1,0 +1,420 @@
+================================================================================
+TRAINING PARAMETERS
+================================================================================
+
+Model: DNATagger with EvoFeaturizer
+Evo Model: evo-1.5-8k-base
+Device: cuda
+
+Dataset:
+  Train sequences: 12000
+  Val sequences: 750
+  Train mutations: 488410
+  Val mutations: 750
+  Avg mutations/seq (train): 40.7
+
+Training:
+  Epochs: 15
+  Batch size: 16
+  Learning rate: 0.000100
+  Optimizer: AdamW (weight_decay=0.01)
+
+Class Weights:
+  Coarse (2 classes): [0.5228131413459778, 11.458600044250488]
+================================================================================
+
+Mutation statistics:
+  Train mutations: 488410 (40.7 per seq)
+  Val mutations: 750 (1.0 per seq)
+  💡 Training data has 41x more mutations per sequence!
+
+Parsing labels...
+✓ Labels parsed
+
+Analyzing training class distribution...
+✓ Train=12000, Val=750
+
+✓ Split: Train=12000, Val=750
+
+Save to Drive
+================================================================================
+STARTING TRAINING
+================================================================================
+Epochs: 30
+Batch size: 16
+Train batches: 750
+Val batches: 47
+Initial LR: 0.000100
+✓ Saving to: checkpoints/
+================================================================================
+
+
+================================================================================
+Epoch 1/30
+================================================================================
+
+TRAIN:
+  Total Loss:  1.1797
+  Fine Loss:   1.6358
+  Coarse Loss: 0.7236
+
+VALIDATION:
+  Total Loss:  0.9571
+  Fine Loss:   1.3436
+  Coarse Loss: 0.5705
+  Overall Accuracy:  0.8178 (582278/712014)
+  ⭐ MUTATION Accuracy: 0.4133 (310/750) 🌟 NEW BEST!
+  Best Mutation Acc:  0.4133
+
+  Per-Class Accuracy:
+    KEEP        : 0.818 (581968/711264)
+    REPLACE_A   : 0.415 (73/176)
+    REPLACE_C   : 0.324 (58/179)
+    REPLACE_G   : 0.422 (79/187)
+    REPLACE_T   : 0.481 (100/208)
+
+  💾 Saved best model (mutation_acc=0.4133)
+
+================================================================================
+Epoch 2/30
+================================================================================
+
+TRAIN:
+  Total Loss:  1.0609
+  Fine Loss:   1.4540
+  Coarse Loss: 0.6679
+
+VALIDATION:
+  Total Loss:  0.9150
+  Fine Loss:   1.4879
+  Coarse Loss: 0.3422
+  Overall Accuracy:  0.9468 (674101/712014)
+  ⭐ MUTATION Accuracy: 0.3573 (268/750) 
+  Best Mutation Acc:  0.4133
+
+  Per-Class Accuracy:
+    KEEP        : 0.947 (673833/711264)
+    REPLACE_A   : 0.352 (62/176)
+    REPLACE_C   : 0.313 (56/179)
+    REPLACE_G   : 0.406 (76/187)
+    REPLACE_T   : 0.356 (74/208)
+
+================================================================================
+Epoch 3/30
+================================================================================
+
+TRAIN:
+  Total Loss:  1.0347
+  Fine Loss:   1.4256
+  Coarse Loss: 0.6439
+
+VALIDATION:
+  Total Loss:  0.9028
+  Fine Loss:   1.4901
+  Coarse Loss: 0.3154
+  Overall Accuracy:  0.9548 (679831/712014)
+  ⭐ MUTATION Accuracy: 0.3573 (268/750) 
+  Best Mutation Acc:  0.4133
+
+  Per-Class Accuracy:
+    KEEP        : 0.955 (679563/711264)
+    REPLACE_A   : 0.420 (74/176)
+    REPLACE_C   : 0.274 (49/179)
+    REPLACE_G   : 0.422 (79/187)
+    REPLACE_T   : 0.317 (66/208)
+
+================================================================================
+Epoch 4/30
+================================================================================
+
+TRAIN:
+  Total Loss:  1.0194
+  Fine Loss:   1.4070
+  Coarse Loss: 0.6318
+
+VALIDATION:
+  Total Loss:  0.8576
+  Fine Loss:   1.3539
+  Coarse Loss: 0.3614
+  Overall Accuracy:  0.9284 (661059/712014)
+  ⭐ MUTATION Accuracy: 0.3960 (297/750) 
+  Best Mutation Acc:  0.4133
+
+  Per-Class Accuracy:
+    KEEP        : 0.929 (660762/711264)
+    REPLACE_A   : 0.426 (75/176)
+    REPLACE_C   : 0.374 (67/179)
+    REPLACE_G   : 0.390 (73/187)
+    REPLACE_T   : 0.394 (82/208)
+
+================================================================================
+Epoch 5/30
+================================================================================
+
+TRAIN:
+  Total Loss:  1.0074
+  Fine Loss:   1.3935
+  Coarse Loss: 0.6213
+
+VALIDATION:
+  Total Loss:  0.8610
+  Fine Loss:   1.3863
+  Coarse Loss: 0.3357
+  Overall Accuracy:  0.9337 (664840/712014)
+  ⭐ MUTATION Accuracy: 0.4013 (301/750) 
+  Best Mutation Acc:  0.4133
+
+  Per-Class Accuracy:
+    KEEP        : 0.934 (664539/711264)
+    REPLACE_A   : 0.489 (86/176)
+    REPLACE_C   : 0.296 (53/179)
+    REPLACE_G   : 0.455 (85/187)
+    REPLACE_T   : 0.370 (77/208)
+
+================================================================================
+Epoch 6/30
+================================================================================
+
+TRAIN:
+  Total Loss:  0.9999
+  Fine Loss:   1.3838
+  Coarse Loss: 0.6160
+
+VALIDATION:
+  Total Loss:  0.8255
+  Fine Loss:   1.2702
+  Coarse Loss: 0.3808
+  Overall Accuracy:  0.9237 (657664/712014)
+  ⭐ MUTATION Accuracy: 0.4320 (324/750) 🌟 NEW BEST!
+  Best Mutation Acc:  0.4320
+
+  Per-Class Accuracy:
+    KEEP        : 0.924 (657340/711264)
+    REPLACE_A   : 0.460 (81/176)
+    REPLACE_C   : 0.374 (67/179)
+    REPLACE_G   : 0.476 (89/187)
+    REPLACE_T   : 0.418 (87/208)
+
+  💾 Saved best model (mutation_acc=0.4320)
+
+================================================================================
+Epoch 7/30
+================================================================================
+
+TRAIN:
+  Total Loss:  0.9951
+  Fine Loss:   1.3775
+  Coarse Loss: 0.6127
+
+VALIDATION:
+  Total Loss:  0.8298
+  Fine Loss:   1.3295
+  Coarse Loss: 0.3300
+  Overall Accuracy:  0.9319 (663496/712014)
+  ⭐ MUTATION Accuracy: 0.4507 (338/750) 🌟 NEW BEST!
+  Best Mutation Acc:  0.4507
+
+  Per-Class Accuracy:
+    KEEP        : 0.932 (663158/711264)
+    REPLACE_A   : 0.500 (88/176)
+    REPLACE_C   : 0.385 (69/179)
+    REPLACE_G   : 0.471 (88/187)
+    REPLACE_T   : 0.447 (93/208)
+
+  💾 Saved best model (mutation_acc=0.4507)
+
+================================================================================
+Epoch 8/30
+================================================================================
+
+TRAIN:
+  Total Loss:  0.9901
+  Fine Loss:   1.3721
+  Coarse Loss: 0.6081
+
+VALIDATION:
+  Total Loss:  0.8467
+  Fine Loss:   1.3901
+  Coarse Loss: 0.3034
+  Overall Accuracy:  0.9418 (670583/712014)
+  ⭐ MUTATION Accuracy: 0.4160 (312/750) 
+  Best Mutation Acc:  0.4507
+
+  Per-Class Accuracy:
+    KEEP        : 0.942 (670271/711264)
+    REPLACE_A   : 0.409 (72/176)
+    REPLACE_C   : 0.318 (57/179)
+    REPLACE_G   : 0.476 (89/187)
+    REPLACE_T   : 0.452 (94/208)
+
+================================================================================
+Epoch 9/30
+================================================================================
+
+TRAIN:
+  Total Loss:  0.9860
+  Fine Loss:   1.3663
+  Coarse Loss: 0.6057
+
+VALIDATION:
+  Total Loss:  0.8972
+  Fine Loss:   1.5406
+  Coarse Loss: 0.2538
+  Overall Accuracy:  0.9594 (683093/712014)
+  ⭐ MUTATION Accuracy: 0.3600 (270/750) 
+  Best Mutation Acc:  0.4507
+
+  Per-Class Accuracy:
+    KEEP        : 0.960 (682823/711264)
+    REPLACE_A   : 0.438 (77/176)
+    REPLACE_C   : 0.313 (56/179)
+    REPLACE_G   : 0.364 (68/187)
+    REPLACE_T   : 0.332 (69/208)
+
+================================================================================
+Epoch 10/30
+================================================================================
+
+TRAIN:
+  Total Loss:  0.9819
+  Fine Loss:   1.3612
+  Coarse Loss: 0.6026
+
+VALIDATION:
+  Total Loss:  0.8318
+  Fine Loss:   1.3329
+  Coarse Loss: 0.3307
+  Overall Accuracy:  0.9265 (659692/712014)
+  ⭐ MUTATION Accuracy: 0.4427 (332/750) 
+  Best Mutation Acc:  0.4507
+
+  Per-Class Accuracy:
+    KEEP        : 0.927 (659360/711264)
+    REPLACE_A   : 0.438 (77/176)
+    REPLACE_C   : 0.363 (65/179)
+    REPLACE_G   : 0.519 (97/187)
+    REPLACE_T   : 0.447 (93/208)
+
+================================================================================
+Epoch 11/30
+================================================================================
+
+TRAIN:
+  Total Loss:  0.9765
+  Fine Loss:   1.3551
+  Coarse Loss: 0.5980
+
+VALIDATION:
+  Total Loss:  0.8594
+  Fine Loss:   1.4527
+  Coarse Loss: 0.2661
+  Overall Accuracy:  0.9560 (680671/712014)
+  ⭐ MUTATION Accuracy: 0.4120 (309/750) 
+  Best Mutation Acc:  0.4507
+
+  Per-Class Accuracy:
+    KEEP        : 0.957 (680362/711264)
+    REPLACE_A   : 0.506 (89/176)
+    REPLACE_C   : 0.363 (65/179)
+    REPLACE_G   : 0.417 (78/187)
+    REPLACE_T   : 0.370 (77/208)
+
+================================================================================
+Epoch 12/30
+================================================================================
+
+TRAIN:
+  Total Loss:  0.9749
+  Fine Loss:   1.3522
+  Coarse Loss: 0.5975
+
+VALIDATION:
+  Total Loss:  0.8445
+  Fine Loss:   1.3705
+  Coarse Loss: 0.3185
+  Overall Accuracy:  0.9354 (666014/712014)
+  ⭐ MUTATION Accuracy: 0.4320 (324/750) 
+  Best Mutation Acc:  0.4507
+
+  Per-Class Accuracy:
+    KEEP        : 0.936 (665690/711264)
+    REPLACE_A   : 0.500 (88/176)
+    REPLACE_C   : 0.346 (62/179)
+    REPLACE_G   : 0.476 (89/187)
+    REPLACE_T   : 0.409 (85/208)
+
+================================================================================
+Epoch 13/30
+================================================================================
+
+TRAIN:
+  Total Loss:  0.9713
+  Fine Loss:   1.3486
+  Coarse Loss: 0.5941
+
+VALIDATION:
+  Total Loss:  0.8146
+  Fine Loss:   1.2796
+  Coarse Loss: 0.3495
+  Overall Accuracy:  0.9164 (652513/712014)
+  ⭐ MUTATION Accuracy: 0.4707 (353/750) 🌟 NEW BEST!
+  Best Mutation Acc:  0.4707
+
+  Per-Class Accuracy:
+    KEEP        : 0.917 (652160/711264)
+    REPLACE_A   : 0.506 (89/176)
+    REPLACE_C   : 0.397 (71/179)
+    REPLACE_G   : 0.519 (97/187)
+    REPLACE_T   : 0.462 (96/208)
+
+  💾 Saved best model (mutation_acc=0.4707)
+
+================================================================================
+Epoch 14/30
+================================================================================
+
+TRAIN:
+  Total Loss:  0.9682
+  Fine Loss:   1.3428
+  Coarse Loss: 0.5936
+
+VALIDATION:
+  Total Loss:  0.8292
+  Fine Loss:   1.3614
+  Coarse Loss: 0.2969
+  Overall Accuracy:  0.9422 (670873/712014)
+  ⭐ MUTATION Accuracy: 0.4387 (329/750) 
+  Best Mutation Acc:  0.4707
+
+  Per-Class Accuracy:
+    KEEP        : 0.943 (670544/711264)
+    REPLACE_A   : 0.483 (85/176)
+    REPLACE_C   : 0.380 (68/179)
+    REPLACE_G   : 0.481 (90/187)
+    REPLACE_T   : 0.413 (86/208)
+
+================================================================================
+Epoch 15/30
+================================================================================
+
+TRAIN:
+  Total Loss:  0.9634
+  Fine Loss:   1.3377
+  Coarse Loss: 0.5892
+
+VALIDATION:
+  Total Loss:  0.7996
+  Fine Loss:   1.2523
+  Coarse Loss: 0.3468
+  Overall Accuracy:  0.9266 (659723/712014)
+  ⭐ MUTATION Accuracy: 0.4747 (356/750) 🌟 NEW BEST!
+  Best Mutation Acc:  0.4747
+
+  Per-Class Accuracy:
+    KEEP        : 0.927 (659367/711264)
+    REPLACE_A   : 0.472 (83/176)
+    REPLACE_C   : 0.447 (80/179)
+    REPLACE_G   : 0.524 (98/187)
+    REPLACE_T   : 0.457 (95/208)
+
+  💾 Saved best model (mutation_acc=0.4747)
