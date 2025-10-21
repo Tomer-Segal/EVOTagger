@@ -1,10 +1,9 @@
 ## Setup and Requirements
 
 **Hardware:** NVIDIA A100 GPU (80GB RAM) via Google Colab  
-**Python:** 3.11+  
 
 1. **Prepare data:**
-   - Upload all datasets from `data/` folder to your Google Drive
+   - Upload all datasets from the google drive
    - Update paths in training/test scripts accordingly
 
 2. **Run training:**
@@ -15,7 +14,7 @@
 
 ## Dataset Overview
 
-All datasets are in the `data/` folder:
+All datasets are in the google drive folder:
 - `ecoli_train_12k.csv` – Training set (12K sequences, 0–80 mutations each)
 - `ecoli_val_750.csv` – Validation set (750 sequences, 1 mutation each)
 - `ecoli_test_5k.csv` – Test set (5K sequences, 1 mutation each)
